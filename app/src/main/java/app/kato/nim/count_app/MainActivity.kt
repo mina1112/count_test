@@ -1,5 +1,6 @@
 package app.kato.nim.count_app
 
+import android.graphics.Color.rgb
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,9 +17,9 @@ class MainActivity : AppCompatActivity() {
             countText.text = tapCount.toString()
         }
 
-       /* if (tapCount % 3 == 0) {
-            countText.setTextColor( 90, 255, 25)
+        if (tapCount % 3 == 0) {
+            countText.setTextColor(color.rgb(255, 90, 25))
         }
 
-    }*/
+    }
 }
